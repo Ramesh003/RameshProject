@@ -1,2 +1,0 @@
-# RameshProject
-My Own Purpose
