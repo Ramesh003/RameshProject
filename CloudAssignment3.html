@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+#header {
+    background-color:purple;
+    color:black;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:Red;
+    height:480px;
+    width:100px;
+    float:left;
+    padding:5px;
+}
+#section {
+    background-color:lightgreen;
+    height:480px;
+    width:480px;
+    padding:10px;
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+}
+</style>
+</head>
+<body>
+<div id="header">
+<h1>Cloud Computing</h1>
+</div>
+
+<div id="nav">
+<button type="button" onclick="myAWS()">AWS</button><br>
+<button type="button" onclick="myMIAZ()">MIAZ</button><br>
+<button type="button" onclick="myGAE()">GAE</button>
+</div>
+<div id="section">
+
+<h2><p1 id="demo">cloud computing assignment using azure<br>
+      !!click the left buttons!!</p1>
+</h2>
+<script>
+function myAWS() { 
+    document.getElementById("demo").innerHTML="<h3>AMAZON WEB SERVICE:</h3>Easy to work<br>Easy to buy"
+}
+
+function myMIAZ() { 
+    document.getElementById("demo").innerHTML="<h3>MICROSOFT AZURE:</h3><br>Hard to understand<br>Easy to buy"
+}
+function myGAE() { 
+    document.getElementById("demo").innerHTML="<h3>GOOGLE APP ENGINE:</h3>Easy to buy,work and understand"
+}
+</script>
+
+
+</body>
+</html>
