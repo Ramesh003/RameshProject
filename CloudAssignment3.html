@@ -39,8 +39,9 @@
 
 <div id="nav">
 <button type="button" onclick="myAWS()">AWS</button><br>
-<button type="button" onclick="myMIAZ()">MIAZ</button><br>
-<button type="button" onclick="myGAE()">GAE</button>
+<button type="button" onclick="myMIAZ()">MSAZ</button><br>
+<button type="button" onclick="myGAE()">GAE</button><br>
+<button type="button" onclick="myEND()">END</button>
 </div>
 <div id="section">
 
@@ -49,19 +50,25 @@
 </h2>
 <script>
 function myAWS() { 
-    document.getElementById("demo").innerHTML="<h3>AMAZON WEB SERVICE:</h3><h5>AWS is a subsidiary of Amazon.com, which offers a suite of cloud computing services that make up an on-demand computing platform. These services operate from 12 geographical regions across the world. <br>The most central and best-known of these services arguably include Amazon Elastic Compute Cloud, also known as AWS , and Amazon Simple Storage Service, also known as S3. AWS now has more than 70 services that span a wide range including compute, storage, networking, database, analytics, application services, deployment, management, mobile, developer tools and tools for the Internet of things. Amazon markets AWS as a service to provide large computing capacity quicker and cheaper than a client company building an actual physical server farm.<br>Easy to buy</h5>"
+    document.getElementById("demo").innerHTML="<h3>AMAZON WEB SERVICE:</h3><h5>AWS is a subsidiary of Amazon.com, which offers a suite of cloud computing services that make up an on-demand computing platform. These services operate from 12 geographical regions across the world. <br>The most central and best-known of these services arguably include Amazon Elastic Compute Cloud, also known as AWS , and Amazon Simple Storage Service, also known as S3. AWS now has more than 70 services that span a wide range including compute, storage, networking, database, analytics, application services, deployment, management, mobile, developer tools and tools for the Internet of things. Amazon markets AWS as a service to provide large computing capacity quicker and cheaper than a client company building an actual physical server farm.<br>Easy to buy</h5><br><ul>Management:<h6><li>Amazon Identity and Access Management (IAM) is an implicit service, the authentication infrastructure used to authenticate access to the various services.</li><li>AWS Directory Service a managed service that allows you to connect AWS resources with an existing on-premises Microsoft Active Directory or to set up a new, stand-alone directory in the AWS Cloud.<li>Amazon CloudWatch, provides monitoring for AWS cloud resources and applications, starting with EC2.</li><li>AWS Management Console (AWS Console), A web-based point and click interface to manage and monitor the Amazon infrastructure suite including (but not limited to) EC2, EBS, S3, SQS, Amazon Elastic MapReduce, and Amazon CloudFront. Amazon also makes available a mobile application for Android which has support for some of the management features from the console.</li><li>Amazon CloudHSM - The AWS CloudHSM service helps to meet corporate, contractual and regulatory compliance requirements for data security by using dedicated Hardware Security Module (HSM) appliances within the AWS cloud.</li><li>AWS Key Management Service (KMS) a managed service to create and control encryption keys.</li><li>Amazon EC2 Container Service (ECS) a highly scalable, fast, container management service, using on Docker containers.</li></h6></ul>"
 }
 
 function myMIAZ() { 
-    document.getElementById("demo").innerHTML="<h3>MICROSOFT AZURE:</h3><h5>Azure Active Directory B2C, Azure Active Directory, Azure Active Directory Domain Services, API Management, Application Gateway, Visual Studio Application Insights, App Service, Automation, Backup, Batch, BizTalk Services, CDN, Cloud Services, Azure Container Service, Data Catalog, Data Factory, Data Lake Analytics, Data Lake Store, Azure DevTest Labs, AzureDNS, DocumentDB, Event Hubs, ExpressRoute, HDInsight, Azure IoT Hub, Key Vault, Load Balancer, Machine Learning, Managed Cache Service, Media Services,<br> Mobile Engagement, Mobile Services,Multi-Factor Authentication, Notification Hubs, Operational Insights, Redis Cache, RemoteApp, Scheduler, Search, Security Center, Service Bus, Service Fabric, SiteRecovery, SQL Database, SQL Data Warehouse, SQL Server Stretch Database, Storage, StorSimple, Stream Analytics, Traffic Manager, Virtual Machines, Virtual Network, Visual Studio Team Services, VPN Gateway.</h5>"
+    document.getElementById("demo").innerHTML="<h3>MICROSOFT AZURE:</h3><h5>AZURE is a cloud computing platform and infrastructure created by Microsoft for building, deploying, and managing applications and services through a global network of Microsoft-managed data centers.It provides both PaaS and IaaS services and supports many different programming languages, tools and frameworks, including both Microsoft-specific and third-party software and systems.</h5><br><ul>Identity:<h5><li>Azure Active Directory</li><li>Rights Management</li><li>Access Control Service</li><li>Multi-Factor Authentication</li><li>Multi-Factor status application</li></h5></ul><h6><ol>Business Analytics:<li>HDInsight is Microsoft's cloud based Hadoop distribution</li><li>Azure Machine Learning is cloud-based predictive analytics and publishing of APIs on the cloud. It allows for even people who do not know much about predictive analytics or people without programming skills to easily predict outcomes off of a dataset.</li><li>Stream Analytics service provides low latency, highly available, scalable complex event processing over streaming data in the cloud.</li><li>Data Catalogue service is a system of registration and system of discovery for enterprise data sources.</li><li>Data Factory allows developers to build data-driven workflows between their local, cloud-based and internet services with complex data processing logic and little programming.</li></h6></ol>"
 }
 function myGAE() { 
-    document.getElementById("demo").innerHTML="<h3>GOOGLE APP ENGINE:</h3><h5>simply App Engine is a platform as a service (PaaS) cloud computing platform for developing and hosting web applications in Google-managed data centers. Applications are sandboxed and run across multiple servers.<br> App Engine offers automatic scaling for web applications—as the number of requests increases for an application, App Engine automatically allocates more resources for the web application to handle the additional demand.Easy to buy,work and understand</h5>"
+    document.getElementById("demo").innerHTML="<h3>GOOGLE APP ENGINE:</h3><h5>simply App Engine is a platform as a service (PaaS) cloud computing platform for developing and hosting web applications in Google-managed data centers. Applications are sandboxed and run across multiple servers.<br> App Engine offers automatic scaling for web applications—as the number of requests increases for an application, App Engine automatically allocates more resources for the web application to handle the additional demand.Easy to buy,work and understand</h5><br>Restrictions:<ul><h5><li>Developers have read-only access to the filesystem on App Engine. Applications can use only virtual filesystems, like gae-filestore.</li><li>App Engine can only execute code called from an HTTP request (scheduled background tasks allow for self calling HTTP requests)</li><li>Users may upload arbitrary Python modules, but only if they are pure-Python; C and Pyrex modules are not supported.</li><li>Java applications may only use a subset (The JRE Class White List) of the classes from the JRE standard edition.</li><li>Datastore cannot use inequality filters on more than one entity property per query.</li><li>A process started on the server to answer a request can't last more than 60 seconds (with the 1.4.0 release, this restriction does not apply to background jobs anymore).</li><li>Does not support sticky sessions (a.k.a. session affinity), only replicated</li></h5></ul>"
+}
+</script>
+
+<script>
+function myEND() { 
+    document.getElementById("demo").innerHTML="<h4><p1>Thanks for Visiting the site</p1></h4>"
 }
 </script>
 
 <div id="footer">
-@CloudAssignment.Azure.net
+@CloudAssignment.Azure.net <br>created: Ramesh Kumar
 </div>
 
 </body>
